@@ -14,7 +14,7 @@ public class PrimitivityModServerPacketHandler implements IPacketHandler{
 
 @Override
 public void onPacketData(INetworkManager manager, Packet250CustomPayload payload, Player player){
-DataInputStream data = new DataInputStream(new ByteArrayInputStream(payload.data)); //Handles incoming data
+DataInputStream data = new DataInputStream(new ByteArrayInputStream(payload.data)); 
 EntityPlayer sender = (EntityPlayer) player;
 }
 
