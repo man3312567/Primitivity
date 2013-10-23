@@ -1,6 +1,7 @@
 package man3312567.Primitivity.common; 
 
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockFurnace;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
@@ -47,6 +48,9 @@ public static Block tinOre;
 public static Item slingshot;
 public static Item rock;
 public static Block fireplace;
+public static Block alloySmelterIdle;
+public static Block alloySmelterActive;
+
 
 
 
@@ -64,6 +68,9 @@ public void PreInit(FMLPreInitializationEvent e){
 	copperOre = new BlockCopperOre(2550).setUnlocalizedName("copperOre").setCreativeTab(tabPrimitivity);
 	tinOre = new BlockTinOre(2551).setUnlocalizedName("tinOre").setCreativeTab(tabPrimitivity);
 	rock = new ItemRock(6002).setUnlocalizedName("rock").setCreativeTab(tabPrimitivity);
+	alloySmelterIdle = new BlockAlloySmelter(2552, false).setUnlocalizedName("alloySmelterIdle").setHardness(3.5F).setCreativeTab(tabPrimitivity);
+	alloySmelterActive = new BlockAlloySmelter(2553, true).setUnlocalizedName("alloySmelterIdle").setHardness(3.5F).setLightValue(0.6F);
+	
 }
 	
 

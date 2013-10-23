@@ -39,7 +39,10 @@ public void registerBlocks(){
 	//Tin
 	GameRegistry.registerBlock(PrimitivityMod.tinOre, "tinOre");
 	LanguageRegistry.addName(PrimitivityMod.tinOre, "\u00a72Tin Ore");
-	
+	//Smelter
+	GameRegistry.registerBlock(PrimitivityMod.alloySmelterIdle);
+	LanguageRegistry.addName(PrimitivityMod.alloySmelterIdle, "\u00a72Alloy Smelter");
+	GameRegistry.registerBlock(PrimitivityMod.alloySmelterActive);
 	
 	
 
